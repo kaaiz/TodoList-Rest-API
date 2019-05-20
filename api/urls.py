@@ -4,4 +4,5 @@ from api import views
 urlpatterns = [
     path('contacts/<int:contact_id>', views.ContactsView.as_view(), name='id-contacts'),
     path('contacts/', views.ContactsView.as_view(), name='all-contacts'),
+    path('todo/', views.TodoView.as_view(), name='id-todos'),
 ]
